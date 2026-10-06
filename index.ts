@@ -25,10 +25,10 @@ async function main() {
   const result = await client.subscribe(MODEL, {
     input: {
       prompt: "A cinematic scene at sunset",
-      // Lowest-cost settings Seedance 2.5 accepts: 480p, 4 s, no audio track.
+      // Vertical 720p, 4 s, no audio track.
       duration: 4,
-      resolution: "480p",
-      aspect_ratio: "16:9",
+      resolution: "720p",
+      aspect_ratio: "9:16",
       generate_audio: false,
     },
     withPolling: true,
